@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap'); 
+  
+/* font-family: 'Big Shoulders Text', cursive; */
+  
+.nav-flex-row { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    position: absolute; 
+    z-index: 100; 
+    left: 0; 
+    width: 100%; 
+    padding: 0; 
+} 
+  
+.nav-flex-row li { 
+    text-decoration: none; 
+    list-style-type: none; 
+    padding: 20px 15px; 
+} 
+  
+.nav-flex-row li a { 
+    font-family: 'Big Shoulders Text', cursive; 
+    color: #000; 
+    font-size: 1.5em; 
+    text-transform: uppercase; 
+    font-weight: 300; 
+} 
+.nav-flex-row li a:hover{ 
+    background: #E7E7E7; 
+} 
+.section-intro { 
+    height:auto; 
+    background-image: url(white.jpg); 
+    background-size:auto; 
+    display: flex; 
+
+} 
+#dish {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  
+  #dish .heading h1 {
+    font-size: 4rem;
+    color: #000;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+  }
+  
+  #dish .heading h1 span {
+    color: #000000;
+  }
+  
+  #dish .box-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 1rem auto;
+    width: 90%;
+  }
+  
+  #dish .box-container .box {
+    height: 20rem;
+    width: 25rem;
+    border-radius: .5rem;
+    margin: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0 0 .5rem #333;
+            box-shadow: 0 0 .5rem #333;
+  }
+  
+  #dish .box-container .box img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  #dish .box-container .box .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(51, 51, 51, 0.6);
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    color: #fff;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  
+  #dish .box-container .box .info h3 {
+    font-size: 3rem;
+  }
+  
+  #dish .box-container .box .info p {
+    font-size: 1.3rem;
+    border-bottom: 0.2rem solid #FFF200;
+    border-top: 0.2rem solid #FFF200;
+    margin: 1rem 2rem;
+  }
+  
+  #dish .box-container .box .info button {
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 4rem;
+    width: 14rem;
+  }
+  
+  #dish .box-container .box .info button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FFF200;
+    height: 100%;
+    width: 0%;
+    -webkit-transition: .2s;
+    transition: .2s;
+    z-index: -1;
+  }
+  
+  #dish .box-container .box .info button:hover::before {
+    width: 100%;
+  }
+  
+  #dish .box-container .box:hover .info {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  #dish {
+      margin: 150px;
+  }
+  .row-flex { 
+    display: flex; 
+    flex-direction: row; 
+} 
+  
+.flex-column-form { 
+    display: flex; 
+    flex-direction: column; 
+    flex: 1; 
+    margin: 30px 20px; 
+} 
+  
+
+.opening-time, 
+.contact-adress { 
+    flex: 1; 
+    margin: 30px 20px; 
+    font-size: 1.2em;
+    color: rgb(0, 0, 0)!important
+
+} 
+  
+.form-group p { 
+    font-size: 1.2em;
+} 
+  
+.opening-time p span, 
+.contact-adress p span { 
+    display: block; 
+} 
